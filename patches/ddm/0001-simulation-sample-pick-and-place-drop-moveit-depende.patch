@@ -1,0 +1,21 @@
+From 6bcf4b2b8e61c58eefa59de406925a608aef4a7c Mon Sep 17 00:00:00 2001
+From: chalia <chalia@qti.qualcomm.com>
+Date: Thu, 30 Jul 2026 15:17:58 +0800
+Subject: [PATCH] simulation-sample-pick-and-place: drop moveit dependencies
+
+Change-Id: Ic5094cd6bcde754ea5bace6d52f16557dfa99806
+---
+ debian/control | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/debian/control b/debian/control
+index 90776d0..4e42139 100644
+--- a/debian/control
++++ b/debian/control
+@@ -8,5 +8,5 @@ Standards-Version: 3.9.2
+ 
+ Package: ros-jazzy-simulation-sample-pick-and-place
+ Architecture: any
+-Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-eigen-stl-containers, ros-jazzy-geometry-msgs, ros-jazzy-moveit-configs-utils, ros-jazzy-moveit-msgs, ros-jazzy-moveit-planners, ros-jazzy-moveit-ros-planning-interface, ros-jazzy-moveit-simple-controller-manager, ros-jazzy-rclcpp, ros-jazzy-std-msgs, ros-jazzy-trajectory-msgs
++Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-eigen-stl-containers, ros-jazzy-geometry-msgs, ros-jazzy-rclcpp, ros-jazzy-std-msgs, ros-jazzy-trajectory-msgs
+ Description: ROS2 package for robot arm pick and place operations using MoveIt
